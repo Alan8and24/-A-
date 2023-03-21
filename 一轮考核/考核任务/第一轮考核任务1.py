@@ -10,6 +10,10 @@ import shutil
 import cv2
 import numpy as np
 
+# 创建data文件夹和data文件夹下的train和test子文件夹
+os.makedirs("data/train", exist_ok=True)
+os.makedirs("data/test", exist_ok=True)
+
 
 # 遍历marvel文件夹中的子文件夹
 for folder in os.listdir("marvel"):
